@@ -1,0 +1,33 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Садовник{% endblock %}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+  <!-- Навбар -->
+  <nav class="navbar">
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Логотип">
+    <ul class="nav-links">
+      <li><a href="{{ url_for('homepage') }}">На главную</a></li>
+      <li><a href="{{ url_for('services_page') }}">Услуги</a></li>
+      <li><a href="{{ url_for('about_page') }}">О нас</a></li>
+    </ul>
+    <a href="https://wa.me/79006722106" target="_blank" class="cta">Написать нам</a>
+  </nav>
+
+  <!-- Контент -->
+  {% block content %}{% endblock %}
+
+  <!-- Футер -->
+  <footer class="footer">
+    <p>© 2025 Садовник. Все права защищены.</p>
+  </footer>
+
+</body>
+</html>
