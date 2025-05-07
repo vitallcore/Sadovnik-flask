@@ -78,7 +78,8 @@ body {
   left: 60px;    /* отступ слева (настраиваемый) */
   font-size: 100px;
   font-weight: bold;
-  background: rgba(0, 0, 0, 0.111);
+  background: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 8px rgba(19, 32, 14, 0.846);
   padding: 10px 30px;
   color: #ffffff;
 }
@@ -86,7 +87,8 @@ body {
   position: absolute;
   bottom: 60px;
   right: 60px;
-  background: rgba(0, 0, 0, 0.111);
+  background: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 8px rgba(19, 32, 14, 0.846);
   padding: 20px;
   text-align: right;
   max-width: 600px;
