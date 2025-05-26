@@ -1,144 +1,123 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Садовник</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
-  <header class="hero">
-    <nav class="navbar">
-      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Логотип">
-      <ul class="nav-links">
-        <li><a href="{{ url_for('homepage') }}">На главную</a></li>
-        <li><a href="{{ url_for('services_page') }}">Услуги</a></li>
-        <li><a href="{{ url_for('about_page') }}">О нас</a></li>
-      </ul>
-      <a href="https://wa.me/{{ phone_number }}" target="_blank" class="cta">Написать нам</a>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Садовник</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Логотип" />
+        <ul class="nav-links">
+          <li>
+            <a href="{{ url_for('homepage') }}">На главную</a>
+          </li>
+          <li>
+            <a href="{{ url_for('services_page') }}">Услуги</a>
+          </li>
+          <li>
+            <a href="{{ url_for('about_page') }}">О нас</a>
+          </li>
+        </ul>
+        <a href="https://wa.me/{{ phone_number }}" target="_blank" class="cta">Написать нам</a>
+      </nav>
 
-    <div class="hero-content">
-      <h1>Садовник</h1>
-      <div class="hero-subtext">
-        <p>Предоставляем высокий уровень сервиса,</p>
-        <p>Вы можете быть уверены в результате,</p>
-        <p>начиная от начала заказа до его завершения!</p>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- О нас -->
-    <section id="about" class="about">
-      <div class="about-container">
-        <span class="about-label">НЕМНОГО<br>О НАС</span>
-        <p class="about-text">
-          Зарекомендовали себя на рынке обустройства вашего комфорта лучшими из лучших, это подтверждает наша высокая производительность, качество и множество положительных отзывов. Наша команда служит на страже <span>Вашего комфорта</span>.
-        </p>
-      </div>
-    </section>
-
-    <!-- Услуги -->
-    <section id="services" class="services">
-      <h2>Наши услуги</h2>
-      <div class="services-grid">
-        <div class="service-item">
-          <img src="{{ url_for('static', filename='images/tree.jpg') }}" alt="Садим самолеты и деревья">
-          <h3>Садим самолеты и деревья</h3>
-          <p>Уже посадили 3 дерева, 5 преступников и 0 самолётов.</p>
-        </div>
-        <div class="service-item">
-          <img src="{{ url_for('static', filename='images/trava.jpg') }}" alt="Косим траву">
-          <h3>Косим траву</h3>
-          <p>Скосили уже порядка миллиона гектаров травы и травки.</p>
-        </div>
-        <div class="service-item">
-          <img src="{{ url_for('static', filename='images/zabor.jpeg') }}" alt="Возведем забор">
-          <h3>Возведем забор</h3>
-          <p>Построили заборы любой сложности и всех цветов.</p>
-        </div>
-        <div class="service-item">
-          <img src="{{ url_for('static', filename='images/penek.jpg') }}" alt="Корчуем пни, валим деревья">
-          <h3>Корчуем пни, валим деревья</h3>
-          <p>Удалили больше сотни пней и спилили десятки деревьев.</p>
+      <div class="hero-content">
+        <h1>Садовник</h1>
+        <div class="hero-subtext">
+          <p>Предоставляем высокий уровень сервиса,</p>
+          <p>Вы можете быть уверены в результате,</p>
+          <p>начиная от начала заказа до его завершения!</p>
         </div>
       </div>
-    </section>
+    </header>
 
-    <!-- Отзывы -->
-    <section id="testimonials" class="testimonials">
-      <h2>Отзывы клиентов</h2>
-      <div class="testimonial-wrapper">
-        <button class="prev">&lt;</button>
-        <div class="testimonial-container">
-          <div class="testimonial-item">
-            <p class="testimonial-text">
-              Partnering with Sadovnik was a game-changer. Their work was stunning and helpful for my business that not only enhanced our brand but also boosted our conversion rate by 50%.
-            </p>
-            <div class="testi-author">
-              <img src="{{ url_for('static', filename='images/mike.jpg') }}" alt="Mike Jones">
-              <div>
-                <strong>Mike Jones</strong><br>
-                Founder of Acme Corp
-              </div>
-            </div>
+    <main>
+      <!-- О нас -->
+      <section id="about" class="about">
+        <div class="about-container">
+          <span class="about-label">НЕМНОГО<br />О НАС</span>
+          <p class="about-text">
+            Зарекомендовали себя на рынке обустройства вашего комфорта лучшими из лучших, это подтверждает наша высокая производительность, качество и множество положительных отзывов. Наша команда служит на страже <span>Вашего комфорта</span>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Услуги -->
+      <section id="services" class="services">
+        <h2>Наши услуги</h2>
+        <div class="services-grid">
+          <div class="service-item">
+            <img src="{{ url_for('static', filename='images/tree.jpg') }}" alt="Садим самолеты и деревья" />
+            <h3>Садим самолеты и деревья</h3>
+            <p>Уже посадили 3 дерева, 5 преступников и 0 самолётов.</p>
           </div>
-          <div class="testimonial-item">
-            <p class="testimonial-text">
-              Великолепная работа! Команда сдружилась с нашим проектом, поняла задачи и превзошла все ожидания.
-            </p>
-            <div class="testi-author">
-              <img src="{{ url_for('static', filename='images/client2.jpg') }}" alt="Client 2">
-              <div>
-                <strong>Екатерина Смирнова</strong><br>
-                Директор ООО «Ромашка»
-              </div>
-            </div>
+          <div class="service-item">
+            <img src="{{ url_for('static', filename='images/trava.jpg') }}" alt="Косим траву" />
+            <h3>Косим траву</h3>
+            <p>Скосили уже порядка миллиона гектаров травы и травки.</p>
           </div>
-          <div class="testimonial-item">
-            <p class="testimonial-text">
-              Рекомендую всем: быстро, профессионально и с душой подходят к работе!
-            </p>
-            <div class="testi-author">
-              <img src="{{ url_for('static', filename='images/client3.jpg') }}" alt="Client 3">
-              <div>
-                <strong>Иван Петров</strong><br>
-                Частный застройщик
-              </div>
-            </div>
+          <div class="service-item">
+            <img src="{{ url_for('static', filename='images/zabor.jpeg') }}" alt="Возведем забор" />
+            <h3>Возведем забор</h3>
+            <p>Построили заборы любой сложности и всех цветов.</p>
+          </div>
+          <div class="service-item">
+            <img src="{{ url_for('static', filename='images/penek.jpg') }}" alt="Корчуем пни, валим деревья" />
+            <h3>Корчуем пни, валим деревья</h3>
+            <p>Удалили больше сотни пней и спилили десятки деревьев.</p>
           </div>
         </div>
-        <button class="next">&gt;</button>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <script>
-    // JS-карусель для отзывов
-    const prevBtn = document.querySelector('.prev');
-    const nextBtn = document.querySelector('.next');
-    const track = document.querySelector('.testimonial-container');
-    let index = 0;
-    const items = document.querySelectorAll('.testimonial-item');
+      <!-- Отзывы -->
+      <section id="testimonials" class="testimonials">
+        <h2>Отзывы клиентов</h2>
+        <div class="testimonial-wrapper">
+          <button class="prev">&lt;</button>
+          <div class="testimonial-container">
+            <div class="testimonial-item">
+              <img src="{{ url_for('static', filename='images/otziv_1_black.jpg') }}" alt="Отзыв 1" />
+            </div>
+            <div class="testimonial-item">
+              <img src="{{ url_for('static', filename='images/otziv_2_black.jpg') }}" alt="Отзыв 2" />
+            </div>
+            <div class="testimonial-item">
+              <img src="{{ url_for('static', filename='images/otziv_3_black.jpg') }}" alt="Отзыв 3" />
+            </div>
+          </div>
+          <button class="next">&gt;</button>
+        </div>
+      </section>
+    </main>
 
-    function updateCarousel() {
-      track.style.transform = `translateX(-${index * 100}%)`;
-    }
-
-    prevBtn.addEventListener('click', () => {
-      index = (index - 1 + items.length) % items.length;
-      updateCarousel();
-    });
-    nextBtn.addEventListener('click', () => {
-      index = (index + 1) % items.length;
-      updateCarousel();
-    });
-  </script>
-  <!-- Футер -->
+    <script>
+      // JS-карусель для отзывов
+      const prevBtn = document.querySelector('.prev')
+      const nextBtn = document.querySelector('.next')
+      const track = document.querySelector('.testimonial-container')
+      let index = 0
+      const items = document.querySelectorAll('.testimonial-item')
+      
+      function updateCarousel() {
+        track.style.transform = `translateX(-${index * 100}%)`
+      }
+      
+      prevBtn.addEventListener('click', () => {
+        index = (index - 1 + items.length) % items.length
+        updateCarousel()
+      })
+      nextBtn.addEventListener('click', () => {
+        index = (index + 1) % items.length
+        updateCarousel()
+      })
+    </script>
+    <!-- Футер -->
     <footer class="footer">
       <p>© 2025 Садовник. Все права защищены.</p>
     </footer>
-</body>
+  </body>
 </html>
