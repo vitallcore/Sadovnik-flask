@@ -261,3 +261,77 @@ body {
 .next {
   right: 10px;
 }
+
+.about-photo {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.about-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.order-button {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.order-link {
+  display: inline-block;
+  background-color: #ffc935;
+  color: #111;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+.order-link:hover {
+  background-color: #ffe188;
+}
+
+.gis {
+  background: transparent;
+  border: 7px solid #ffffff00;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.gis:hover {
+  background-color: #a6ff838e;
+  color: #000;
+}
+
+/* Центрируем заголовки на странице "О нас" */
+.about h1,
+.about h2 {
+  text-align: center;
+}
+
+/* Отступы после заголовков */
+.about h1 {
+  margin-bottom: 2rem;
+  /* 1.5 × текущий размер шрифта — регулируйте по вкусу */
+}
+
+.about h2 {
+  margin-bottom: 2rem;
+  /* отступ чуть меньше, чем у h1 */
+}
+
+.welcome {
+  text-align: center;
+}
+
+/* Отступы после заголовков */
+.welcome {
+  margin-bottom: 1.5rem;
+  /* 1.5 × текущий размер шрифта — регулируйте по вкусу */
+}
