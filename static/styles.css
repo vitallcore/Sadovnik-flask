@@ -323,7 +323,7 @@ body {
 
 .about h2 {
   margin-bottom: 2rem;
-  /* отступ чуть меньше, чем у h1 */
+  /* отступ меньше, чем у h1 */
 }
 
 .welcome {
