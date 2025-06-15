@@ -6,7 +6,7 @@ authors = [
     {name = "vitallcore",email = "vitaslipknot@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.13"
 dependencies = [
     "blinker (>=1.9.0,<2.0.0)",
     "click (>=8.2.1,<9.0.0)",
