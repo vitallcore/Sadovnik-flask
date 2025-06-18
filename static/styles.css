@@ -361,6 +361,24 @@ p {
   /* display: list-item по умолчанию, оставляем, но центрируем текст */
   text-align: left;
 }
+
 h2 {
-    padding: 20px;
-  }
+  padding: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  /* убирает фиолетовый цвет для посещённых ссылок */
+}
+
+a:hover {
+  color: #f0cd6a;
+  /* опционально: цвет при наведении */
+  text-decoration: underline;
+  /* опционально: подчёркивание при наведении */
+}
