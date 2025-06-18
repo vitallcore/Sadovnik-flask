@@ -335,3 +335,32 @@ body {
   margin-bottom: 1.5rem;
   /* 1.5 × текущий размер шрифта — регулируйте по вкусу */
 }
+
+p {
+  text-indent: 20px;
+}
+
+.abus {
+  text-align: center;
+}
+
+.centered-list {
+  /* Убираем отступ слева у ul, чтобы он точно центровался */
+  padding-left: 0;
+  /* Центрируем содержимое */
+  text-align: center;
+  /* Если хотите ограничить ширину списка, чтобы он не растягивался на всю ширину */
+  max-width: 400px;
+  margin: 0 auto;
+  /* Маркеры (точечки) выводятся внутри блока */
+  list-style-position: inside;
+}
+
+/* Переносим сам элемент li в центр */
+.centered-list li {
+  /* display: list-item по умолчанию, оставляем, но центрируем текст */
+  text-align: left;
+}
+h2 {
+    padding: 20px;
+  }
