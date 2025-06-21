@@ -494,7 +494,7 @@ a:hover {
     padding: 20px;
     top: auto;
     left: auto;
-    position: relative;
+    position: absolute;
   }
 
   .hero-subtext {
