@@ -40,10 +40,15 @@
       <!-- О нас -->
       <section id="about" class="about">
         <div class="about-container">
-          <span class="about-label">КАК МЫ<br />РАБОТАЕМ</span>
-          <p class="about-text">
-            Зарекомендовали себя на рынке обустройства вашего комфорта лучшими из лучших, это подтверждает наша высокая производительность, качество и множество положительных отзывов. Наша команда служит на страже <span>Вашего комфорта</span>.
-          </p>
+          <span class="about-label">КАК<br />МЫ<br />РАБОТАЕМ</span>
+          <ul class="about-text">
+            <li>
+              Оформи заказ по кнопке <span>Заказать услугу/Написать нам</span>
+            </li>
+            <li>Мы расчитаем стоимость услуги на <span>самых выгодных условиях</span></li>
+            <li>Наш мастер выедет к вам <span>в течение часа</span></li>
+            <li>Оплата услуг происходит <span>после их выполнения</span></li>
+          </ul>
         </div>
       </section>
 
@@ -141,6 +146,10 @@
         updateCarousel()
       })
     </script>
+    <!-- Кнопка заказа -->
+    <div class="order-button service-order">
+      <a class="order-link" href="https://wa.me/{{ phone_number }}" target="_blank">Заказать услугу</a>
+    </div>
     <!-- Футер -->
     <footer class="footer">
       <p>
