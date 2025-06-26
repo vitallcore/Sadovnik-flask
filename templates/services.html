@@ -3,34 +3,88 @@
   Садовник - Услуги
 {% endblock %}
 {% block content %}
-  <section class="services">
-    <body>
-      <main class="container">
-        <h2>УСЛУГИ</h2>
-        <p id="tree-service">1. Кронирование и спил деревьев</p>
-        <p>1.1. Кронирование дерева</p>
-        <p>1.2 Спил дерева</p>
-        <p>1.3 Измельчение веток</p>
-        <p>1.4 Утилизация деревьев</p>
-        <p id="clearing-service">2. Расчистка участков под ключ</p>
-        <p>2.1 Спил и выкорчевка кустарников/деревьев</p>
-        <p>2.2 Спил поросли</p>
-        <p>2.3. Покос травы</p>
-        <p>2.4 Утилизация мусора</p>
-        <p>Для расчистки участков, в наличии погрузчики, экскаваторы. Для вывоза мусора имеются самосвалы и газели.</p>
-        <p id="metal-service">3. Изготовление декора металлоконструкций</p>
-        <p>3.1 Изготовление лестниц</p>
-        <p>3.2. Изготовление навесов</p>
-        <p>3.3. Изготовление каркасов</p>
-        <p>3.4 Изготовление мангальных зон</p>
-        <p>3.5 Изготовление металлоконструкций на заказ</p>
-        <p id="green-service">4. Озеленение территорий и помещений</p>
-        <p>4.1 Посадка растений</p>
-        <p>4.2 Посадка деревьев</p>
-        <p>4.3 Посев/укладка газона</p>
-        <p>4.4 Вертикальное озеленение стен</p>
-        <h2><a class="order-link" href="https://wa.me/{{ phone_number }}" target="_blank">Заказать услугу</a></h2>
-      </main>
-    </body>
+  <section class="services-page">
+    <div class="container">
+      <h1>Наши услуги</h1>
+
+      <!-- Блок 1: Кронирование и спил деревьев -->
+      <div id="tree-service" class="service-block">
+        <div class="service-content">
+          <div class="service-text">
+            <h2>Кронирование и спил деревьев</h2>
+            <ul>
+              <li>Кронирование дерева</li>
+              <li>Спил дерева</li>
+              <li>Измельчение веток</li>
+              <li>Утилизация деревьев</li>
+            </ul>
+          </div>
+          <div class="service-image">
+            <img src="{{ url_for('static', filename='images/service1.jpg') }}" alt="Кронирование деревьев" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Блок 2: Расчистка участков -->
+      <div id="clearing-service" class="service-block">
+        <div class="service-content reverse">
+          <div class="service-image">
+            <img src="{{ url_for('static', filename='images/service2.jpg') }}" alt="Расчистка участков" />
+          </div>
+          <div class="service-text">
+            <h2>Расчистка участков под ключ</h2>
+            <ul>
+              <li>Спил и выкорчевка кустарников/деревьев</li>
+              <li>Спил поросли</li>
+              <li>Покос травы</li>
+              <li>Утилизация мусора</li>
+            </ul>
+            <p class="service-note">Для расчистки участков в наличии погрузчики, экскаваторы. Для вывоза мусора имеются самосвалы и газели.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Блок 3: Металлоконструкции -->
+      <div id="metal-service" class="service-block">
+        <div class="service-content">
+          <div class="service-text">
+            <h2>Изготовление декора металлоконструкций</h2>
+            <ul>
+              <li>Изготовление лестниц</li>
+              <li>Изготовление навесов</li>
+              <li>Изготовление каркасов</li>
+              <li>Изготовление мангальных зон</li>
+              <li>Изготовление металлоконструкций на заказ</li>
+            </ul>
+          </div>
+          <div class="service-image">
+            <img src="{{ url_for('static', filename='images/service3.jpg') }}" alt="Металлоконструкции" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Блок 4: Озеленение -->
+      <div id="green-service" class="service-block">
+        <div class="service-content reverse">
+          <div class="service-image">
+            <img src="{{ url_for('static', filename='images/service4.jpg') }}" alt="Озеленение территорий" />
+          </div>
+          <div class="service-text">
+            <h2>Озеленение территорий и помещений</h2>
+            <ul>
+              <li>Посадка растений</li>
+              <li>Посадка деревьев</li>
+              <li>Посев/укладка газона</li>
+              <li>Вертикальное озеленение стен</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Кнопка заказа -->
+      <div class="order-button service-order">
+        <a class="order-link" href="https://wa.me/{{ phone_number }}" target="_blank">Заказать услугу</a>
+      </div>
+    </div>
   </section>
 {% endblock %}
