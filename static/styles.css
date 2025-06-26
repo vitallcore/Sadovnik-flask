@@ -19,13 +19,11 @@ body {
   justify-content: space-between;
   background: rgba(0, 0, 0, 0.5);
   min-height: 80px;
-  /* Изменено на min-height */
   padding: 0 40px;
 }
 
 .navbar img {
   max-height: 70px;
-  /* Ограничение высоты */
   width: auto;
   object-fit: contain;
 }
@@ -197,11 +195,22 @@ body {
   text-align: center;
 }
 
+/* Новый контейнер для карусели */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .testimonial-wrapper {
   position: relative;
   max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .testimonial-container {
@@ -211,24 +220,10 @@ body {
 
 .testimonial-item {
   min-width: 100%;
-  padding: 20px;
-  background: #222;
-  border-radius: 8px;
-  box-sizing: border-box;
-}
-
-.testimonial-text {
-  font-size: 18px;
-  font-style: italic;
-  line-height: 1.5;
-}
-
-.testimonial-item {
-  min-width: 100%;
-  box-sizing: border-box;
   padding: 0;
   background: none;
   border-radius: 0;
+  box-sizing: border-box;
 }
 
 .testimonial-item img {
@@ -238,11 +233,9 @@ body {
   object-fit: cover;
 }
 
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+/* Стили для кнопок карусели */
+.carousel-container .prev,
+.carousel-container .next {
   background: transparent;
   border: 1px solid #f0cd6a;
   color: #f0cd6a;
@@ -251,14 +244,37 @@ body {
   height: 40px;
   border-radius: 4px;
   cursor: pointer;
+  flex-shrink: 0;
+  margin: 0 15px;
 }
 
-.prev {
-  left: 10px;
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 95%;
+  }
+
+  .carousel-container .prev,
+  .carousel-container .next {
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
 }
 
-.next {
-  right: 10px;
+@media (max-width: 576px) {
+  .carousel-container {
+    flex-wrap: wrap;
+  }
+
+  .carousel-container .prev,
+  .carousel-container .next {
+    position: relative;
+    margin: 15px auto;
+    order: 2;
+    width: 40%;
+  }
 }
 
 .about-photo {
@@ -368,7 +384,7 @@ a:visited {
 
 a:hover {
   color: #f0cd6a;
-  text-decoration: underline;
+  text-decoration: none
 }
 
 /* Футер */
