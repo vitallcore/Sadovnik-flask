@@ -573,3 +573,12 @@ a:hover {
     margin-top: 10px;
   }
 }
+
+.welcome-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.welcome-section h2 {
+  margin-bottom: 1rem;
+}
