@@ -22,7 +22,7 @@
             <a href="{{ url_for('about_page') }}">О нас</a>
           </li>
         </ul>
-        <a href="https://wa.me/{{ phone_number }}" target="_blank" class="cta">Написать нам</a>
+        <a href="https://wa.me/{{ phone_number }}?text={{ 'Здравствуйте! Пишу по поводу заказа услуги у вас!'|urlencode }}" target="_blank" class="cta">Написать нам</a>
       </nav>
 
       <div class="hero-content">
@@ -45,9 +45,15 @@
             <li>
               Оформи заказ по кнопке <span>Заказать услугу/Написать нам</span>
             </li>
-            <li>Мы расчитаем стоимость услуги на <span>самых выгодных условиях</span></li>
-            <li>Наш мастер выедет к вам <span>в течение часа</span></li>
-            <li>Оплата услуг происходит <span>после их выполнения</span></li>
+            <li>
+              Мы расчитаем стоимость услуги на <span>самых выгодных условиях</span>
+            </li>
+            <li>
+              Наш мастер выедет к вам <span>в течение часа</span>
+            </li>
+            <li>
+              Оплата услуг происходит <span>после их выполнения</span>
+            </li>
           </ul>
         </div>
       </section>
