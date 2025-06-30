@@ -27,7 +27,7 @@
           <a href="{{ url_for('about_page') }}">О нас</a>
         </li>
       </ul>
-      <a href="https://wa.me/79006722106" target="_blank" class="cta">Написать нам</a>
+      <a href="https://wa.me/{{ phone_number }}?text={{ 'Здравствуйте! Пишу по поводу заказа услуги у вас!'|urlencode }}" target="_blank" class="cta">Написать нам</a>
     </nav>
 
     <!-- Контент -->
