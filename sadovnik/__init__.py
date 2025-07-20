@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 import random
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 PHONE_NUMBERS = [
     "79006722106",
@@ -11,19 +11,19 @@ PHONE_NUMBERS = [
 ]
 
 
-@app.route("/")
+@application.route("/")
 def homepage():
     phone_number = random.choice(PHONE_NUMBERS)
     return render_template("index.html", phone_number=phone_number)
 
 
-@app.route("/about")
+@application.route("/about")
 def about_page():
     phone_number = random.choice(PHONE_NUMBERS)
     return render_template("about.html", phone_number=phone_number)
 
 
-@app.route("/services")
+@application.route("/services")
 def services_page():
     phone_number = random.choice(PHONE_NUMBERS)
     return render_template("services.html", phone_number=phone_number)
